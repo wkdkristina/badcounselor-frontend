@@ -27,7 +27,8 @@ const SignIn = () => {
 
   return (
     <div>
-      <h2>Sign In</h2>
+      <h1>Bad Counselor - Sign In</h1>
+      <h2>Welcome back! Please log in.</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
         <input
