@@ -1,12 +1,14 @@
-import React from "react";
-import SignUp from "./components/Auth/SignUp";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SignUp from './components/Auth/SignUp';
+import SignIn from './components/Auth/SignIn';
 
 function App() {
   return (
-    <div>
-      <h1>Therapist Game</h1>
-      <SignUp />
-    </div>
+    <Routes>
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/signin" element={<SignIn />} />
+    </Routes>
   );
 }
 
